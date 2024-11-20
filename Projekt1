@@ -1,11 +1,6 @@
-// See https://aka.ms/new-console-template for more information
-using System;
+Hej,nu har jag skapat ett nytt projekt.
 
-internal class Program
-{
-    public static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-        Console.WriteLine("Hello World!");
-    }
-}
+
+Jag provar att ändra lite här.
+
+Hej igen!
