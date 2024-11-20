@@ -8,6 +8,4 @@ internal class Program
 
         Console.WriteLine("Det här är ett en flygtidskalkylator.");
         
-        
-    }
-}
+        Hej
