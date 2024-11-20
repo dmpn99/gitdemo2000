@@ -6,6 +6,12 @@ internal class Program
     public static void Main(string[] args)
     {
 
-        Console.WriteLine("Det här är ett en flygtidskalkylator.");
+        Console.WriteLine("*");
+        Console.WriteLine("\nVälkommen till flygtidsberäknaren!");
+        Console.WriteLine("\nVilket flyg vill du se detaljerad information om? (svara med en siffra)");
+        Console.WriteLine("1. Stockholm - New York");
+        Console.WriteLine("2. New York - Stockholm");
+        Console.WriteLine("3. Avslyuta programmet");
+        Console.Write("Skriv ditt val här: ");
+        int userChoice = Console.Parse(Console.ReadLine());
         
-        Hej
