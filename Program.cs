@@ -24,7 +24,7 @@ internal class Program
             Console.WriteLine();
             Console.WriteLine("\nVälkommen till flygtidsberäknaren!");
             Console.WriteLine("\nVilket flyg vill du se detaljerad information om? (svara med en siffra)");
-            Console.WriteLine("1. Stockholm - New York");
+            Console.WriteLine("\n1. Stockholm - New York");
             Console.WriteLine("2. New York - Stockholm");
             Console.WriteLine("3. Avsluta programmet");
             Console.Write("Skriv ditt val här: ");
@@ -48,12 +48,12 @@ internal class Program
                 }
                 else
                 {
-                    Console.WriteLine("\nFelaktigt val, försök igen!");
+                    Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-2!");
                 }
             }
             else
             {
-                Console.WriteLine("\nOgiltig inmatning, försök igen!");
+                Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-2!");
             }
         }
     }
