@@ -19,12 +19,11 @@ internal class Program
         while (isRunning)
         {
             Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine("*************************************************************************");
             Console.WriteLine();
-            Console.WriteLine("\nVälkommen till flygtidsberäknaren!");
+            Console.WriteLine("Välkommen till flygtidsberäknaren!");
             Console.WriteLine("\nVilket flyg vill du se detaljerad information om? (svara med en siffra)");
-            Console.WriteLine("\n1. Stockholm - New York");
+            Console.WriteLine("1. Stockholm - New York");
             Console.WriteLine("2. New York - Stockholm");
             Console.WriteLine("3. Avsluta programmet");
             Console.Write("Skriv ditt val här: ");
@@ -34,26 +33,41 @@ internal class Program
             {
                 if (userChoice == 1)
                 {
-                    Console.WriteLine("Du har valt Stockholm - New York");
-                    isRunning = false;
-                    Console.WriteLine("Avgångstid från Stockholm: 14:03");
+                    Console.Clear();
+                    Console.WriteLine("*************************************************************************");
+                    Console.WriteLine("\nAvgångstid från Stockholm: 14:03");
                     Console.WriteLine("Ankomsttid till New York: " + (sthlmToNyHours + timeHours - timeDifference) + ":" + (sthlmToNyMinutes + timeMinutes));
+                    Console.WriteLine("\n*************************************************************************");
+                    isRunning = false;
                 }
                 else if (userChoice == 2)
+                    
                 {
-                    Console.WriteLine("Du har valt New York - Stockholm");
-                    isRunning = false;
+                    Console.Clear();
+                    Console.WriteLine("*************************************************************************");
                     Console.WriteLine("\nAvgångstid från New York: 10:10");
                     Console.WriteLine("Ankomsttid till Stockholm: " + (nyToSthlmHours + timeHours + timeDifference) + ":" + (nyToSthlmMinutes + timeMinutes));
+                    Console.WriteLine("\n*************************************************************************");
+                    isRunning = false;
+                }
+                else if (userChoice == 3)
+                {
+                    Console.Clear();
+                    Console.WriteLine("*************************************************************************");
+                    Console.WriteLine("\nDu har valt att avsluta programmet");
+                    Console.WriteLine("\n*************************************************************************");
+                    isRunning = false;
                 }
                 else
                 {
-                    Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-2!");
+                    
+                    Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-3!");
                 }
             }
             else
             {
-                Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-2!");
+                
+                Console.WriteLine("\nOgiltig inmatning, välj mellan alternativ 1-3!");
             }
         }
     }
